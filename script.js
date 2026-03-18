@@ -1,179 +1,54 @@
 const questionsData = [
-    {
-        q: "He is the prince of Denmark; thoughtful, conflicted, struggles with revenge and morality:",
-        options: ["Claudius", "Laertes", "Hamlet", "Polonius"],
-        ans: 2
-    },
-    {
-        q: "He is Gertrude's new husband and King of Denmark; ambitious and deceitful, kills his brother to take the throne:",
-        options: ["Hamlet", "Claudius", "Fortinbras", "Horatio"],
-        ans: 1
-    },
-    {
-        q: "Queen of Denmark and Hamlet's mother; she marries Claudius quickly after her husband's death:",
-        options: ["Ophelia", "Beatrice", "Gertrude", "Desdemona"],
-        ans: 2
-    },
-    {
-        q: "She is Hamlet's love interest; gentle and obedient, descends into madness:",
-        options: ["Gertrude", "Ophelia", "Cordelia", "Portia"],
-        ans: 1
-    },
-    {
-        q: "He is King's advisor and father of Ophelia and Laertes; meddles and spies:",
-        options: ["Polonius", "Claudius", "Horatio", "Rosencrantz"],
-        ans: 0
-    },
-    {
-        q: "He is the son of Polonius; seeks revenge for his father and sister, he duels Hamlet:",
-        options: ["Fortinbras", "Horatio", "Laertes", "Guildenstern"],
-        ans: 2
-    },
-    {
-        q: "Hamlet's loyal friend; trustworthy, survives to tell the story:",
-        options: ["Laertes", "Horatio", "Polonius", "Claudius"],
-        ans: 1
-    },
-    {
-        q: "He is the Prince of Norway; he becomes king after the tragedy:",
-        options: ["Hamlet", "Fortinbras", "Claudius", "Laertes"],
-        ans: 1
-    },
-    {
-        q: "He reveals the truth about his murder and sparks Hamlet's quest for revenge:",
-        options: ["Polonius", "The Ghost of King Hamlet", "Claudius", "Horatio"],
-        ans: 1
-    },
-    {
-        q: "The Hamlet is set in:",
-        options: ["England", "Norway", "Italy", "Denmark"],
-        ans: 3
-    },
-    {
-        q: "A theme in Hamlet where he seeks to avenge his father while questioning morality:",
-        options: ["Love and Betrayal", "Revenge and Justice", "Greed and Power", "War and Peace"],
-        ans: 1
-    },
-    {
-        q: "A theme in Hamlet where he pretends madness and Ophelia's breakdown reflect the impact of loss and sorrow:",
-        options: ["Madness and Grief", "Pride and Ambition", "Duty and Honor", "Fate and Destiny"],
-        ans: 0
-    },
-    {
-        q: "A conflict in which Hamlet seeks revenge against Claudius for murdering his father:",
-        options: ["Character Vs. Society", "Character Vs. Nature", "Character Vs. Character", "Character Vs. Self"],
-        ans: 2
-    },
-    {
-        q: "What point of view is used in the drama Hamlet?",
-        options: ["First Person", "Third Person Limited", "Dramatic Point of View", "Omniscient Point of View"],
-        ans: 2
-    },
-    {
-        q: "What did Hamlet do to caught Claudius about his crime?",
-        options: ["He wrote a letter", "He plotted a play of a murder scene", "He challenged him to a duel", "He told the Queen"],
-        ans: 1
-    },
-    {
-        q: "This is an Ancient Indian Epic featuring Gods and warriors:",
-        options: ["Ramayana", "Mahabharata", "Vedas", "Upanishads"],
-        ans: 1
-    },
-    {
-        q: "Who wrote the Indian Epic Mahabharata?",
-        options: ["Valmiki", "Kalidasa", "Vyasa", "Krishna"],
-        ans: 2
-    },
-    {
-        q: "Eldest Pandava; wise, just, and devoted to Dharma:",
-        options: ["Bhima", "Arjuna", "Yudhishtira", "Nakula"],
-        ans: 2
-    },
-    {
-        q: "Second Pandava; extremely strong and courageous, loyal to his family:",
-        options: ["Bhima", "Arjuna", "Sahadeva", "Yudhishtira"],
-        ans: 0
-    },
-    {
-        q: "Third Pandava; skilled archer; guided by Krishna in duty and strategy:",
-        options: ["Nakula", "Bhima", "Sahadeva", "Arjuna"],
-        ans: 3
-    },
-    {
-        q: "Fourth Pandava; supports his brothers with wisdom:",
-        options: ["Nakula", "Sahadeva", "Yudhishtira", "Arjuna"],
-        ans: 0
-    },
-    {
-        q: "Youngest Pandava; thoughtful and helps in decision-making:",
-        options: ["Bhima", "Sahadeva", "Nakula", "Yudhishtira"],
-        ans: 1
-    },
-    {
-        q: "Wife of all Pandavas; her humiliation sparks conflict and drives the story towards war:",
-        options: ["Kunti", "Gandhari", "Draupadi", "Satyavati"],
-        ans: 2
-    },
-    {
-        q: "Leader of the Kauravas; ambitious, envious, opposes the Pandavas for the throne:",
-        options: ["Karna", "Duryodhana", "Shakuni", "Bhishma"],
-        ans: 1
-    },
-    {
-        q: "Warrior allied with the Kauravas; brave but meets a tragic end in battle:",
-        options: ["Bhishma", "Drona", "Karna", "Shakuni"],
-        ans: 2
-    },
-    {
-        q: "Young Pandava warrior; dies in the Kurukshetra war:",
-        options: ["Abhimanyu", "Ghatotkacha", "Iravan", "Babruvahana"],
-        ans: 0
-    },
-    {
-        q: "Divine guide; teaches duty, righteousness, and devotion to the Pandavas:",
-        options: ["Shiva", "Brahma", "Krishna", "Vishnu"],
-        ans: 2
-    },
-    {
-        q: "Duryodhana's uncle; cheats the Pandavas in the dice game:",
-        options: ["Shakuni", "Bhishma", "Drona", "Karna"],
-        ans: 0
-    },
-    {
-        q: "Father of Bhisma, and the King of Hastinapura:",
-        options: ["King Pandu", "King Dhritarashtra", "King Shantanu", "King Bharata"],
-        ans: 2
-    },
-    {
-        q: "A goddess of river who killed her sons with King Shantanu:",
-        options: ["Saraswati", "Ganga", "Yamuna", "Lakshmi"],
-        ans: 1
-    },
-    {
-        q: "A great warrior, and the only living son of Shantanu and Ganga:",
-        options: ["Bhishma", "Chitrangada", "Vichitravirya", "Pandu"],
-        ans: 0
-    },
-    {
-        q: "The Mahabharata is set around the kingdom of:",
-        options: ["Ayodhya", "Hastinapura", "Indraprastha", "Mathura"],
-        ans: 1
-    },
-    {
-        q: "A theme in Mahabharata where the characters struggle to follow moral duty, as seen in Arjuna's dilemma and Yudhishtira's choices:",
-        options: ["Power and Greed", "Duty and Righteousness", "Love and Sacrifice", "Fate and Luck"],
-        ans: 1
-    },
-    {
-        q: "A theme in Mahabharata where Duryodhana's greed and Shakuni's deceit spark conflict that destroys families and kingdoms:",
-        options: ["Wisdom and Peace", "Pride and Ambition", "Humility and Service", "Truth and Non-violence"],
-        ans: 1
-    },
-    {
-        q: "What is the Point of view used in the Epic play Mahabharata?",
-        options: ["First Person", "Second Person", "Third Person Limited", "Third Person Omniscient POV"],
-        ans: 3
-    }
+    // --- SYSTEM FUNDAMENTALS ---
+    { q: "A system of linear equations consists of two or more linear equations that are being solved:", options: ["Sequentially", "Simultaneously", "Individually", "In reverse"], ans: 1 },
+    { q: "A system that has at least one solution is classified as a/an:", options: ["Inconsistent system", "Consistent system", "Dependent system", "Independent system"], ans: 1 },
+    { q: "If a system of linear equations has no solution, it is called a/an:", options: ["Consistent system", "Inconsistent system", "Independent system", "Singular system"], ans: 1 },
+    { q: "Equations are considered ______ if they represent the same line and share all solutions.", options: ["Independent", "Inconsistent", "Dependent", "Linear"], ans: 2 },
+    { q: "In a three-variable system, a single linear equation is graphically represented as a:", options: ["Line", "Point", "Plane", "Sphere"], ans: 2 },
+    { q: "A consistent and independent system of equations will have exactly how many solutions?", options: ["Zero", "One", "Two", "Infinite"], ans: 1 },
+    { q: "A system where the equations are multiples of each other and share infinitely many solutions is:", options: ["Consistent and Independent", "Consistent and Dependent", "Inconsistent", "Non-linear"], ans: 1 },
+
+    // --- CRAMER'S RULE ---
+    { q: "Cramer's Rule uses which mathematical concept to solve systems of linear equations?", options: ["Derivatives", "Integrals", "Determinants", "Logarithms"], ans: 2 },
+    { q: "Under what condition is Cramer's Rule NOT applicable for solving a system?", options: ["When the determinant is positive", "When the determinant is negative", "When the determinant is zero", "When the constants are zero"], ans: 2 },
+    { q: "In Cramer's Rule, the denominator for solving every variable is always the determinant of the:", options: ["Augmented matrix", "Coefficient matrix", "Identity matrix", "Constants vector"], ans: 1 },
+
+    // --- GAUSSIAN ELIMINATION ---
+    { q: "The primary goal of the 'Forward Elimination' step in Gaussian Elimination is to transform the matrix into:", options: ["Identity form", "Lower triangular form", "Upper triangular form", "Diagonal form"], ans: 2 },
+    { q: "After the matrix is in upper triangular form, which process is used to find the values of the variables?", options: ["Forward substitution", "Back substitution", "Partial pivoting", "Matrix inversion"], ans: 1 },
+    { q: "In a matrix, the values located at positions a11, a22, ... ann are known as the:", options: ["Off-diagonal elements", "Pivot elements", "Augmented elements", "Constant elements"], ans: 1 },
+    { q: "What is the name of the matrix that combines the coefficients and the constants of a system?", options: ["Identity matrix", "Coefficient matrix", "Augmented matrix", "Square matrix"], ans: 2 },
+
+    // --- GAUSS-JORDAN ELIMINATION ---
+    { q: "Gauss-Jordan Elimination differs from Gaussian Elimination because it transforms the matrix into:", options: ["Upper triangular form", "Lower triangular form", "Reduced row echelon form (Identity)", "Non-singular form"], ans: 2 },
+    { q: "Which method eliminates the need for back substitution by creating zeros both above and below the pivots?", options: ["Gaussian Elimination", "Cramer's Rule", "Gauss-Jordan Elimination", "LU Decomposition"], ans: 2 },
+
+    // --- PIVOTING & STABILITY ---
+    { q: "The process of swapping rows to move a larger value into the pivot position is called:", options: ["Scaling", "Pivoting", "Substitution", "Normalization"], ans: 1 },
+    { q: "Why is pivoting used during elimination methods?", options: ["To make the math harder", "To avoid division by zero or small numbers", "To increase the number of variables", "To change the solution"], ans: 1 },
+
+    // --- LU DECOMPOSITION ---
+    { q: "LU Decomposition involves factoring a square matrix A into two matrices, L and U, which stand for:", options: ["Linear and Unit", "Leading and Unified", "Lower and Upper triangular", "Left and Upwards"], ans: 2 },
+    { q: "In LU Decomposition, after finding L and U, the first step in solving for X is to solve the system:", options: ["UX = B", "LY = B", "AX = B", "LX = Y"], ans: 1 },
+    { q: "Which LU method requires the diagonal elements of the Lower triangular matrix (L) to be all 1s?", options: ["Crout's Method", "Doolittle's Method", "Cholesky's Method", "Gauss's Method"], ans: 1 },
+    { q: "Which LU method requires the diagonal elements of the Upper triangular matrix (U) to be all 1s?", options: ["Crout's Method", "Doolittle's Method", "Gaussian Method", "Cramer's Method"], ans: 0 },
+    { q: "LU Decomposition is especially efficient when solving systems that have:", options: ["Different coefficient matrices", "Multiple sets of constant vectors (B)", "Only one variable", "Large determinants"], ans: 1 },
+
+    // --- MATRIX TYPES & OPERATIONS ---
+    { q: "A matrix that has the same number of rows and columns is called a:", options: ["Rectangular matrix", "Square matrix", "Vector matrix", "Row matrix"], ans: 1 },
+    { q: "A matrix where all elements below the main diagonal are zero is called:", options: ["Lower triangular", "Upper triangular", "Identity", "Diagonal"], ans: 1 },
+    { q: "A matrix where all elements above the main diagonal are zero is called:", options: ["Lower triangular", "Upper triangular", "Identity", "Null"], ans: 0 },
+    { q: "The Identity matrix is a square matrix with ______ on the main diagonal and zeros elsewhere.", options: ["Zeros", "Ones", "Variables", "Constants"], ans: 1 },
+    { q: "Two matrices are said to be ______ if one can be obtained from the other through elementary row operations.", options: ["Identical", "Inverse", "Row-equivalent", "Symmetric"], ans: 2 },
+
+    // --- THEORETICAL OUTCOMES ---
+    { q: "If the elimination process results in a row like [0 0 0 | 5], the system is:", options: ["Consistent", "Independent", "Inconsistent", "Identity"], ans: 2 },
+    { q: "If the elimination process results in a row like [0 0 0 | 0], it typically indicates that the system has:", options: ["Exactly one solution", "No solution", "Infinitely many solutions", "One imaginary solution"], ans: 2 },
+    { q: "Direct methods like Gaussian Elimination are preferred over iterative methods when the matrix is:", options: ["Very sparse", "Small to medium-sized and dense", "Non-existent", "Unstable"], ans: 1 },
+    { q: "In Numerical Methods, what do we call the process of finding the value of one variable and using it to find the others?", options: ["Forward Elimination", "Substitution", "Normalization", "Pivoting"], ans: 1 },
+    { q: "The number of variables in a system of linear equations must usually match the number of ______ to have a unique solution.", options: ["Constants", "Rows/Equations", "Pivots", "Determinants"], ans: 1 },
+    { q: "Which of the following is NOT an elementary row operation?", options: ["Swapping two rows", "Multiplying a row by a non-zero constant", "Multiplying two rows together", "Adding a multiple of one row to another"], ans: 2 },
+    { q: "The ______ of a square matrix must be non-zero for the matrix to have a unique inverse.", options: ["Trace", "Determinant", "Size", "Rank"], ans: 1 }
 ];
 
 let randomizedQuestions = [];
